@@ -1,18 +1,12 @@
 buildscript {
     repositories {
         mavenCentral()
-        maven {
-            name = "forge"
-            url = "https://maven.minecraftforge.net"
-        }
-        // Fallback for old artifacts
-        maven {
-            name = "forge-legacy"
-            url = "https://maven.minecraftforge.net/.m2/repository"
-        }
+        maven { url = 'https://maven.minecraftforge.net' }
+        // Fallback for old ForgeGradle dependencies
+        maven { url = 'https://repo.maven.apache.org/maven2' }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
     }
 }
 
@@ -22,8 +16,7 @@ version = "1.0.0"
 group = "com.mardaster.setrotate"
 archivesBaseName = "SetRotate"
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = targetCompatibility = '1.8'
 
 minecraft {
     version = "1.8.9-11.15.1.2318-1.8.9"
