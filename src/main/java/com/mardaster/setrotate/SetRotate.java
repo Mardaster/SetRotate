@@ -1,5 +1,6 @@
 package com.mardaster.setrotate;
 
+import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -27,6 +28,7 @@ public class SetRotate {
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
+        ClientCommandHandler.instance.registerCommand(new CommandSetRotate());
         logger.info("{} initialization complete.", MOD_NAME);
     }
 }
