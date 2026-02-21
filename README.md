@@ -5,7 +5,7 @@ Minecraft Forge мод для версии 1.8.9, предоставляющий
 ## Требования
 
 - Java 8 (JDK 1.8)
-- Gradle 4.9 (через Gradle Wrapper)
+- Gradle 4.10.3 (через Gradle Wrapper)
 - Minecraft Forge 1.8.9-11.15.1.2318-1.8.9
 
 ## Сборка
@@ -38,6 +38,6 @@ SetRotate/
 ├── gradlew                     # Gradle Wrapper (Unix)
 ├── gradlew.bat                 # Gradle Wrapper (Windows)
 └── gradle/wrapper/
-    ├── gradle-wrapper.jar      # Gradle Wrapper JAR (Gradle 4.9)
+    ├── gradle-wrapper.jar      # Gradle Wrapper JAR (Gradle 4.10.3)
     └── gradle-wrapper.properties
 ```
