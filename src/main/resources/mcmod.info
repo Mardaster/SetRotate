@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "setrotate",
+    "name": "SetRotate",
+    "description": "A Minecraft Forge mod for 1.8.9 that provides rotation manipulation functionality.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["Mardaster"],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
